@@ -125,12 +125,15 @@ image: images/jak.jpeg
 layout: two-cols
 ---
 
+<div v-click>
 - wysłać plik na serwer
 
 ```ts
 fs.writeFileSync('original.png', buffer);
 ```
+</div>
 
+<div v-click>
 - przetworzyć plik na serwerze
 
 ```ts
@@ -138,18 +141,23 @@ const buffer = await sharp(buffer)
 .resize(300, 300)
 .toBuffer();
 ```
+</div>
 
+<div v-click>
 - zapisać przetworzony plik
 
 ```ts
 fs.writeFileSync('transformed.png', buffer);
 ```
+</div>
 
+<div v-click>
 - udostępnić link do pliku
 
 ```ts
 https://example.com/images/transformed.png
 ```
+</div>
 
 ---
 layout: two-cols
@@ -252,395 +260,316 @@ https://cdn.pawellorenc.com/cat.png
 <img src="images/cloudfront.png" style="width: 30%; margin: 0 auto;">
 
 ---
-
-# Co widzisz?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
-
----
-layout: default
+layout: image-right
+image: images/spiderman-venom3.jpeg
 ---
 
-# Table of contents
+# Co na pewno wydarzy się w projekcie?
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+<div style="text-decoration: line-through" v-click>przekroczony deadline</div>
+<div style="text-decoration: line-through" v-click>brak błędów</div>
+<div style="text-decoration: line-through" v-click>nieskończony budżet</div>
 
-<Toc maxDepth="1"></Toc>
 
----
-transition: slide-up
-level: 2
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<div v-click style="margin: 30px auto 0; font-size: 45px;">ZMIANA (założeń)</div>
 
 ---
 layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+image: images/slasknet_logo3.png
 ---
 
-# Code
+# Śląsknet
+slasknet.com - istnieje od 2001 roku
 
-Use code snippets and get the highlighting directly![^1]
+<div v-click>
+Galerie:
+<ul>
+  <li>ograniczone liczba zdjęć</li>
+  <li>ograniczona wielkość zdjęć</li>
+</ul>
+</div>
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+<div v-click style="margin-top: 30px;">
+Oryginały:
+<ul>
+  <li>na dyskach zewnętrznych</li>
+</ul>
+</div>
 
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
+
+---
+layout: two-cols
+image: images/slasknet_logo3.png
+---
+
+# Śląsknet
+slasknet.com
+
+<div v-click>Rekomendowane szerokości zdjęć w galeriach:</div>
+<ul>
+  <li v-click>do 2014 roku - 800px</li>
+  <li v-click>do 2018 roku - 1400px</li>
+  <li v-click>do 2022 - 1920px</li>
+  <li v-click>obecnie - 3000px</li>
+</ul>
+
+::right::
+<div style="text-align:center">
+  <img src="images/20041017polar_slask.jpeg" style="width: 60%; margin: 0 auto 10px;">
+  Polar Wrocław - Śląsk Wrocław (17.10.2004)
+
+  <img src="images/20050904_slask_lechia.jpeg" style="width: 60%; margin: 10px auto;">
+  Lechia Gdańsk - Śląsk Wrocław (04.09.2005)
+</div>
+
+---
+layout: two-cols
+---
+
+<img src="images/slasknet-screenshot-kobiety2.png" style="width: 80%;">
+::right::
+<img src="images/slasknet-screenshot-desktop.png" style="width: 80%;">
+
+---
+layout: two-cols
+---
+
+<img src="images/slasknet-screenshot-kobiety3.png" style="width: 80%;">
+
+::right::
+
+- Zdjęcie na stronie: 740 x 360px
+- Rekomendowana proporcja: 16:9
+- Powinno być: 740 x 416px
+
+<img src="images/slasknet-fb.png" style="width: 80%;margin: 20px auto;">
+
+---
+
+# Dynamiczne przetwarzanie obrazów
+https://github.com/aws-samples/image-optimization
+
+---
+
+# Dynamiczne przetwarzanie obrazów
+
+<img src="images/architecture.png" style="width: 90%">
+
+```ts {all|1|2|all}
+/image.jpg?format=auto&Width=256
+/image.jpg/format=avif,width=256
 ```
 
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+<arrow v-click="[1, 2]" x1="200" y1="400" x2="200" y2="200" color="#564" width="3" arrowSize="1" />
+<arrow v-click="[2, 3]" x1="200" y1="400" x2="300" y2="280" color="#564" width="3" arrowSize="1" />
 
 ---
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
-
----
-class: px-20
+layout: two-cols
 ---
 
-# Themes
+# Formaty plików
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+<ul>
+  <li v-click="1">JPEG</li>
+  <li v-click="1">PNG <span v-click="2">(przezroczystość)</span></li>
+  <li v-click="1">GIF <span v-click="2">(animacja)</span></li>
+  <li v-click="3">SVG <span>(wektory)</span></li>
+  <li v-click="4">WEBP</li>
+  <li v-click="5">AVIF <span v-click="6">(nie wspierany przez Edge)</span></li>
+  <li v-click="7">JPEG XL (JXL) <span v-click="8">(nie wspierany przez Chrome)</span></li>
+  <li v-click="9">WEBP2</li>
+</ul>
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+::right::
 
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# Animations
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
+```ts
+case 'format': 
+  var SUPPORTED_FORMATS = ['auto', 'jpeg', 'webp', 'avif', 'png', 'svg', 'gif'];
+  if (request.querystring[operation]['value'] && SUPPORTED_FORMATS.includes(request.querystring[operation]['value'].toLowerCase())) {
+      var format = request.querystring[operation]['value'].toLowerCase();
+      if (format === 'auto') {
+          format = 'jpeg';
+          if (request.headers['accept']) {
+              if (request.headers['accept'].value.includes("avif")) {
+                  format = 'avif';
+              } else if (request.headers['accept'].value.includes("webp")) {
+                  format = 'webp';
+              } 
+          }
+      }
+      normalizedOperations['format'] = format;
   }
+break;
+```
+---
+
+# Ile potrzeba miejsca i czasu?
+
+<div v-click>
+  <img src="images/cold_start_jpg.png" style="width: 80%;margin: 20px auto; border: 1px solid black" />
+
+  <img src="images/cold_start_png.png" style="width: 80%;margin: 20px auto; border: 1px solid black;" />
+</div>
+
+---
+
+# Jak żyć?
+
+---
+layout: image
+image: images/glapinski.jpeg
+---
+
+---
+layout: image
+image: images/kiszonki.webp
+---
+
+---
+
+<div v-click style="text-align: center; font-size: 50px; margin: 0 auto;">
+  <div>Dostosuj rozwiązania pod siebie</div>
+</div>
+
+---
+
+# next/image
+
+<div v-click>
+
+```ts
+import Image from 'next/image'
+ 
+export default function Page() {
+  return (
+    <div className="grid-element">
+      <Image
+        fill
+        src="https://cdn.pawellorenc.com/wks_exposito_radosc.jpeg"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+    </div>
+  )
 }
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
+```
 
 </div>
 
 ---
 
-# LaTeX
+# Upload plików
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
+<img v-click src="images/upload-fe-be-aws.png" style="width: 90%; margin: 40px auto 0;">
 
 ---
 
-# Diagrams
+# Upload plików
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
+<img src="images/presignedurl3.png" style="width: 90%; margin: 40px auto 0;">
 
 
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
+---
+layout: image-right
+image: images/money.jpeg
 
+---
 
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
+# Koszty
 
-@enduml
-```
+Ile to wszystko będzie kosztować?
 
+---
+
+# AWS Free Tier
+
+<img src="images/aws_free_tier.png" style="width: 90%">
+
+---
+
+# Koszty - S3
+
+- przechowywanie danych: $0,0245 za każdy GB dla pierwszych 50 TB miesięcznie
+- upload plików:  darmowe
+- transfer wychodzący: $0,09 za każdy GB dla pierwszych 10 TB (pierwsze 100 GB mc - darmowe)
+
+<img src="images/pricing-s3.png" style="width: 90%; margin-top: 20px;">
+
+---
+
+# Koszty - CloudFront
+
+- transfer wychodzący: $0,085 za każdy GB dla pierwszych 10 TB (pierwszy 1 TB mc - darmowe)
+- zapytania: $0,0075 za każde 10 000
+- CloudFront Functions: $0,1 dla miliona wywołań
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="images/pricing-cf.png" style="display: inline-block; width: 20%; margin-right: 30px;">
+  <img src="images/pricing-cf2.png" style="display: inline-block; width: 30%">
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-src: ./pages/multiple-entries.md
-hide: false
 ---
 
----
-layout: center
-class: text-center
+# Koszty - Lambda
+
+<img src="images/pricing-lambda.png" style="width: 90%; margin-top: 20px;">
+
 ---
 
-# Learn More
+# Przykładowe koszty
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+<div v-click="1" style="font-size: 14px">
+Założenia:
+  <ul>
+    <li>100 tysięcy oryginalnych zdjęć o średniej wielkości 400 kB</li>
+    <li>tworzone 24 warianty każdego zdjęcia o średniej wielkości 22 kB</li>
+    <li>miesięcznie przetwarzane 20% zdjęć z biblioteki</li>
+    <li>milion zapytań miesięcznie z trafnością w pamięć podręczną na poziomie 95%</li>
+    <li>dostępna pamięć dla lambdy to 1500 MB ze średnią czasem wykonania 100 ms</li>
+  </ul>
+</div>
+<div v-click="2" style="font-size: 14px; margin-top: 16px;">
+Koszty:
+  <ul>
+    <li>S3 - przechowywanie danych: (100 000 x 400 + 100 000 x 24 x 22)/1024/1024 * 0,023 = <b>$2,03</b>/mc</li>
+    <li>Lambda - przetwarzanie zdjęć: 100 000 x 0,2 x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1000000) = <b>$1,27</b>/mc</li>
+    <li>S3 - zgranie i wgranie pliku: 100 000 x 0,2 x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
+    <li>CF - transfer: 100 0000 x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
+    <li>CF - zapytania: 1 000 000 * 0,0075/10000=<b>$0.75</b>/mc</li>
+    <li>CF Functions - <b>$0,1</b></li>
+  </ul>
+</div>
+
+<div v-click="3" style="margin-top: 16px;">W sumie: $8,52 (realnie: <b>$4,52</b>)</div>
+
+---
+
+# Przykładowe koszty
+
+<div style="font-size: 14px">
+Założenia:
+  <ul>
+    <li>100 tysięcy oryginalnych zdjęć o średniej wielkości 400 kB</li>
+    <li>tworzone 24 warianty każdego zdjęcia o średniej wielkości 22 kB</li>
+    <li>miesięcznie przetwarzane 20% zdjęć z biblioteki</li>
+    <li>milion zapytań miesięcznie z trafnością w pamięć podręczną na poziomie 95%</li>
+    <li>dostępna pamięć dla lambdy to 1500 MB ze średnią czasem wykonania 100 ms</li>
+  </ul>
+</div>
+<div style="font-size: 14px; margin-top: 16px;">
+Koszty:
+  <ul>
+    <li>S3 - przechowywanie danych: (100 000 x 400 + 100 000 x 24 x 22)/1024/1024 * 0,023 = <b>$2,03</b>/mc</li>
+    <li style="text-decoration: line-through">Lambda - przetwarzanie zdjęć: 100 000 x 0,2 x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1000000) = <b>$1,27</b>/mc</li>
+    <li>S3 - zgranie i wgranie pliku: 100 000 x 0,2 x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
+    <li style="text-decoration: line-through">CF - transfer: 100 0000 x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
+    <li style="text-decoration: line-through">CF - zapytania: 1 000 000 * 0,0075/10000=<b>$0.75</b>/mc</li>
+    <li style="text-decoration: line-through">CF Functions - <b>$0,1</b></li>
+  </ul>
+</div>
+
+<div style="margin-top: 16px;">W sumie: $8,52 (realnie: <b>$4,62</b>)</div>
+
+----
+
+# Rozchmurz swoje pliki
+## optymalizacja obrazów w AWS
