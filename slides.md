@@ -382,6 +382,15 @@ break;
   <img src="images/cold_start_png_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 </div>
 
+---
+
+# Ile potrzeba miejsca i czasu?
+
+<div>
+  <img src="images/cold_start_jpg_oryginalne_red.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+
+  <img src="images/cold_start_png_oryginalne_red.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+</div>
 
 ---
 
@@ -504,11 +513,11 @@ Założenia:
 <div v-click="2" style="font-size: 14px; margin-top: 16px;">
 Koszty:
   <ul>
-    <li>S3 - przechowywanie danych: (100 000 x 400 + 100 000 x 24 x 22)/1024/1024 * 0,023 = <b>$2,03</b>/mc</li>
-    <li>Lambda - przetwarzanie zdjęć: 100 000 x 0,2 x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1000000) = <b>$1,27</b>/mc</li>
-    <li>S3 - zgranie i wgranie pliku: 100 000 x 0,2 x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
-    <li>CF - transfer: 100 0000 x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
-    <li>CF - zapytania: 1 000 000 * 0,0075/10000=<b>$0.75</b>/mc</li>
+    <li>S3 - przechowywanie danych: (100k x 400kb + 100k x 24 x 22kb)/1GB * 0,023 = <b>$2,03</b>/mc</li>
+    <li>Lambda - przetwarzanie zdjęć: 100k x 20% x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1M) = <b>$1,27</b>/mc</li>
+    <li>S3 - zgranie i wgranie pliku: 100k x 20% x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
+    <li>CF - transfer: 1M x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
+    <li>CF - zapytania: 1M * 0,0075/10000=<b>$0.75</b>/mc</li>
     <li>CF Functions - <b>$0,1</b></li>
   </ul>
 </div>
@@ -532,11 +541,11 @@ Założenia:
 <div style="font-size: 14px; margin-top: 16px;">
 Koszty:
   <ul>
-    <li>S3 - przechowywanie danych: (100 000 x 400 + 100 000 x 24 x 22)/1024/1024 * 0,023 = <b>$2,03</b>/mc</li>
-    <li style="text-decoration: line-through">Lambda - przetwarzanie zdjęć: 100 000 x 0,2 x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1000000) = <b>$1,27</b>/mc</li>
-    <li>S3 - zgranie i wgranie pliku: 100 000 x 0,2 x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
-    <li style="text-decoration: line-through">CF - transfer: 100 0000 x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
-    <li style="text-decoration: line-through">CF - zapytania: 1 000 000 * 0,0075/10000=<b>$0.75</b>/mc</li>
+    <li>S3 - przechowywanie danych: (100k x 400kb + 100k x 24 x 22kb)/1GB * 0,023 = <b>$2,03</b>/mc</li>
+    <li style="text-decoration: line-through">Lambda - przetwarzanie zdjęć: 100k x 20% x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1M) = <b>$1,27</b>/mc</li>
+    <li>S3 - zgranie i wgranie pliku: 100k x 20% x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
+    <li style="text-decoration: line-through">CF - transfer: 1M x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
+    <li style="text-decoration: line-through">CF - zapytania: 1M * 0,0075/10000=<b>$0.75</b>/mc</li>
     <li style="text-decoration: line-through">CF Functions - <b>$0,1</b></li>
   </ul>
 </div>
