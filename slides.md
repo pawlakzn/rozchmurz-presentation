@@ -37,64 +37,18 @@ fonts:
 </div>
 
 ---
-layout: two-cols-header
+layout: two-cols
+src: pages/test.md
 ---
-
-<div grid="~ cols-2 gap-15" m="-t-2">
-  <div style="font-size: 16px">
-
-    U stóp moich kraina dostatków i krasy,
-    Nad głową niebo jasne, obok piękne lice
-    Dlaczegoż stąd ucieka serce w okolice
-    Dalekie, i - niestety! jeszcze dalsze czasy?
-
-    Litwo! piały mi wdzięczniej twe szumiące lasy
-    Niż słowiki Bajdaru, Salhiry dziewice,
-    I weselszy deptałem twoje trzęsawice
-    Niż rubinowe morwy, złote ananasy.
-
-    Tak daleki! tak różna wabi mię ponęta;
-    Dlaczegoż roztargniony wzdycham bez ustanku
-    Do tej, którą kochałem w dni moich poranku?
-
-    Ona w lubej dziedzinie, która mi odjęta,
-    Gdzie jej wszystko o wiernym powiada kochanku,
-    Depcąc świeże me ślady czyż o mnie pamięta?
-  </div>
-  <img border="rounded" src="images/wroclaw.jpg" alt="">
-</div>
 
 ---
 
 # Co widzieliście?
 
 ---
-layout: two-cols-header
+layout: two-cols
+src: pages/test.md
 ---
-
-<div grid="~ cols-2 gap-15" m="-t-2">
-  <div style="font-size: 16px">
-
-    U stóp moich kraina dostatków i krasy,
-    Nad głową niebo jasne, obok piękne lice
-    Dlaczegoż stąd ucieka serce w okolice
-    Dalekie, i - niestety! jeszcze dalsze czasy?
-
-    Litwo! piały mi wdzięczniej twe szumiące lasy
-    Niż słowiki Bajdaru, Salhiry dziewice,
-    I weselszy deptałem twoje trzęsawice
-    Niż rubinowe morwy, złote ananasy.
-
-    Tak daleki! tak różna wabi mię ponęta;
-    Dlaczegoż roztargniony wzdycham bez ustanku
-    Do tej, którą kochałem w dni moich poranku?
-
-    Ona w lubej dziedzinie, która mi odjęta,
-    Gdzie jej wszystko o wiernym powiada kochanku,
-    Depcąc świeże me ślady czyż o mnie pamięta?
-  </div>
-  <img border="rounded" src="images/wroclaw.jpg" alt="">
-</div>
 
 ---
 layout: image-right
@@ -125,7 +79,7 @@ image: images/jak.jpeg
 layout: two-cols
 ---
 
-<div v-click>
+<div>
 - wysłać plik na serwer
 
 ```ts
@@ -239,6 +193,7 @@ image: images/cloudfront-map.png
 ## Cloud Delivery Network 
 (CDN)
 
+<div v-click>
 - Link S3
 
 ```ts
@@ -256,8 +211,12 @@ https://d3t8w3h30go7tk.cloudfront.net/cat.png
 ```ts
 https://cdn.pawellorenc.com/cat.png
 ```
+</div>
 
-<img src="images/cloudfront.png" style="width: 30%; margin: 0 auto;">
+<div style="text-align: center">
+  <img src="images/cloudfront.png" style="width: 30%; margin: 10px auto;">
+  <span style="font-weight: bold;">Amazon CloudFront</span>
+</div>
 
 ---
 layout: image-right
@@ -271,7 +230,7 @@ image: images/spiderman-venom3.jpeg
 <div style="text-decoration: line-through" v-click>nieskończony budżet</div>
 
 
-<div v-click style="margin: 30px auto 0; font-size: 45px;">ZMIANA (założeń)</div>
+<div v-click style="margin: 30px auto 0; font-size: 45px;">ZMIANA</div>
 
 ---
 layout: image-right
@@ -305,9 +264,9 @@ image: images/slasknet_logo3.png
 # Śląsknet
 slasknet.com
 
-<div v-click>Rekomendowane szerokości zdjęć w galeriach:</div>
+<div>Rekomendowane szerokości zdjęć w galeriach:</div>
 <ul>
-  <li v-click>do 2014 roku - 800px</li>
+  <li>do 2014 roku - 800px</li>
   <li v-click>do 2018 roku - 1400px</li>
   <li v-click>do 2022 - 1920px</li>
   <li v-click>obecnie - 3000px</li>
@@ -322,13 +281,6 @@ slasknet.com
   Lechia Gdańsk - Śląsk Wrocław (04.09.2005)
 </div>
 
----
-layout: two-cols
----
-
-<img src="images/slasknet-screenshot-kobiety2.png" style="width: 80%;">
-::right::
-<img src="images/slasknet-screenshot-desktop.png" style="width: 80%;">
 
 ---
 layout: two-cols
@@ -338,17 +290,22 @@ layout: two-cols
 
 ::right::
 
-- Zdjęcie na stronie: 740 x 360px
-- Rekomendowana proporcja: 16:9
-- Powinno być: 740 x 416px
+<ul>
+  <li v-click>Zdjęcie na stronie: 740 x 360 px</li>
+  <li v-click>Różne standardy dla FB, TT, YT</li>
+  <li v-click>Rekomendowana proporcja: 16:9</li>
+  <li v-click>Powinno być: 740 x 416 px</li>
+</ul>
 
-<img src="images/slasknet-fb.png" style="width: 80%;margin: 20px auto;">
+<img v-click src="images/slasknet-fb.png" style="width: 80%;margin: 20px auto;">
 
 ---
 
 # Dynamiczne przetwarzanie obrazów
 https://github.com/aws-samples/image-optimization
 
+---
+clicks: 3
 ---
 
 # Dynamiczne przetwarzanie obrazów
@@ -365,6 +322,7 @@ https://github.com/aws-samples/image-optimization
 
 ---
 layout: two-cols
+clicks: 9
 ---
 
 # Formaty plików
@@ -381,6 +339,8 @@ layout: two-cols
 </ul>
 
 ::right::
+
+<div v-click="5">
 
 ```ts
 case 'format': 
@@ -401,15 +361,27 @@ case 'format':
   }
 break;
 ```
+</div>
 ---
 
 # Ile potrzeba miejsca i czasu?
 
 <div v-click>
-  <img src="images/cold_start_jpg.png" style="width: 80%;margin: 20px auto; border: 1px solid black" />
+  <img src="images/cold_start_jpg_480.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 
-  <img src="images/cold_start_png.png" style="width: 80%;margin: 20px auto; border: 1px solid black;" />
+  <img src="images/cold_start_png_480.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 </div>
+
+---
+
+# Ile potrzeba miejsca i czasu?
+
+<div>
+  <img src="images/cold_start_jpg_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+
+  <img src="images/cold_start_png_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+</div>
+
 
 ---
 
@@ -491,6 +463,8 @@ Ile to wszystko będzie kosztować?
 - przechowywanie danych: $0,0245 za każdy GB dla pierwszych 50 TB miesięcznie
 - upload plików:  darmowe
 - transfer wychodzący: $0,09 za każdy GB dla pierwszych 10 TB (pierwsze 100 GB mc - darmowe)
+- pobieranie plików: $0.00043 za każde 1000 zapytań
+- wgrywanie plików: $0.00054 za każde 1000 zapytań
 
 <img src="images/pricing-s3.png" style="width: 90%; margin-top: 20px;">
 
@@ -539,7 +513,7 @@ Koszty:
   </ul>
 </div>
 
-<div v-click="3" style="margin-top: 16px;">W sumie: $8,52 (realnie: <b>$4,52</b>)</div>
+<div v-click="3" style="margin-top: 16px;">W sumie: $8,52 (realnie: <b>$4,62</b>)</div>
 
 ---
 
