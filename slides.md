@@ -513,7 +513,7 @@ Założenia:
 <div v-click="2" style="font-size: 14px; margin-top: 16px;">
 Koszty:
   <ul>
-    <li>S3 - przechowywanie danych: (100k x 400kb + 100k x 24 x 22kb)/1GB * 0,023 = <b>$2,03</b>/mc</li>
+    <li>S3 - przechowywanie danych: (100k x 400kb + 100k x 24 x 22kb)/1GB * 0,0245 = <b>$2,16</b>/mc</li>
     <li>Lambda - przetwarzanie zdjęć: 100k x 20% x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1M) = <b>$1,27</b>/mc</li>
     <li>S3 - zgranie i wgranie pliku: 100k x 20% x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
     <li>CF - transfer: 1M x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
@@ -522,7 +522,7 @@ Koszty:
   </ul>
 </div>
 
-<div v-click="3" style="margin-top: 16px;">W sumie: $8,52 (realnie: <b>$4,62</b>)</div>
+<div v-click="3" style="margin-top: 16px;">W sumie: $8,65 (realnie: <b>$4,75</b>)</div>
 
 ---
 
@@ -541,7 +541,7 @@ Założenia:
 <div style="font-size: 14px; margin-top: 16px;">
 Koszty:
   <ul>
-    <li>S3 - przechowywanie danych: (100k x 400kb + 100k x 24 x 22kb)/1GB * 0,023 = <b>$2,03</b>/mc</li>
+    <li>S3 - przechowywanie danych: (100k x 400kb + 100k x 24 x 22kb)/1GB * 0,023 = <b>$2,16</b>/mc</li>
     <li style="text-decoration: line-through">Lambda - przetwarzanie zdjęć: 100k x 20% x 24 x (100/1000 x 1500/1024 x 0,0000166667 + 0,2/1M) = <b>$1,27</b>/mc</li>
     <li>S3 - zgranie i wgranie pliku: 100k x 20% x 24 x (0,005 + 0,0004)/1000 = <b>$2.59</b>/mc</li>
     <li style="text-decoration: line-through">CF - transfer: 1M x 22/1024/1024×0,085=<b>$1,78</b>/mc</li>
@@ -550,9 +550,16 @@ Koszty:
   </ul>
 </div>
 
-<div style="margin-top: 16px;">W sumie: $8,52 (realnie: <b>$4,62</b>)</div>
+<div style="margin-top: 16px;">W sumie: $8,65 (realnie: <b>$4,75</b>)</div>
 
 ----
 
-# Rozchmurz swoje pliki
+---
+
+# Rozchmurz swoje pliki!
 ## optymalizacja obrazów w AWS
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="images/qrcode2.png" style="width: 40%; margin: 0 auto;">
+</div>
+
