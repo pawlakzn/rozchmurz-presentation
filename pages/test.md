@@ -8,4 +8,4 @@
 <p>- Piwo skończę.</p>
   
 ::right::
-<img src="images/wroclaw.jpg" style="width: 90%; margin-left: 20px;">
+<img src="/images/wroclaw.jpg" style="width: 90%; margin-left: 20px;">

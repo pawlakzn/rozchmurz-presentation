@@ -14,10 +14,10 @@ fonts:
 
 <div grid="~ cols-2 gap-1" m="t-1">
   <div>
-   <img border="rounded" src="images/pierwszy.png" alt="">
+   <img border="rounded" src="/images/pierwszy.png" alt="">
   </div>
   <div>
-   <img border="rounded" src="images/pierwszy.webp" alt="">
+   <img border="rounded" src="/images/pierwszy.webp" alt="">
   </div>
 </div>
 
@@ -27,11 +27,11 @@ fonts:
 
 <div grid="~ cols-2 gap-1" m="t-1">
   <div>
-   <img border="rounded" src="images/pierwszy.png" alt="">
+   <img border="rounded" src="/images/pierwszy.png" alt="">
    png - 1.3 MB
   </div>
   <div>
-   <img border="rounded" src="images/pierwszy.webp" alt="">
+   <img border="rounded" src="/images/pierwszy.webp" alt="">
    webP - 79 kB
   </div>
 </div>
@@ -61,7 +61,7 @@ image: images/brainstorming.jpeg
 class: in-the-center
 ---
 
- <img src="images/aws.png" style="width: 80%;">
+ <img src="/images/aws.png" style="width: 80%;">
 
 ---
 layout: image-right
@@ -146,28 +146,28 @@ https://example.com/images/transformed.png
 ::right::
 <div style="margin: 0 auto; text-align: center;">
   Przechowywanie - <span style="font-weight: bold;">Amazon S3</span>
-  <img src="images/s3.png" style="width: 100px; margin: 0 auto 10px;">
+  <img src="/images/s3.png" style="width: 100px; margin: 0 auto 10px;">
   Przetwarzanie - <span style="font-weight: bold;">AWS Lambda</span>
-  <img src="images/lambda.png" style="width: 100px; margin: 0 auto 10px;">
+  <img src="/images/lambda.png" style="width: 100px; margin: 0 auto 10px;">
   Serwowanie - <span style="font-weight: bold;">Amazon CloudFront</span>
-  <img src="images/cloudfront.png" style="width: 100px; margin: 0 auto 10px;">
+  <img src="/images/cloudfront.png" style="width: 100px; margin: 0 auto 10px;">
 </div>
 
 ---
 
-<img src="images/upload-classic.png" style="width: 90%; margin: 0 auto;">
+<img src="/images/upload-classic.png" style="width: 90%; margin: 0 auto;">
 
 ---
 
-<img src="images/upload-classic.png" style="width: 90%;  margin: 0 auto;">
+<img src="/images/upload-classic.png" style="width: 90%;  margin: 0 auto;">
 
 <div style="display: flex; margin: 30px auto 0; width: 100%; text-align: center;">
   <div style="display: flex; flex-direction: column; align-items: bottom; justify-content: bottom;">
-    <img src="images/cat4.jpeg" style="width: 40%; margin: 0 auto; ">
+    <img src="/images/cat4.jpeg" style="width: 40%; margin: 0 auto; ">
     <div>2000 x 2000px</div>
   </div>
   <div style="display: flex; flex-direction: column; align-self: bottom; justify-content: flex-end;">
-    <img src="images/cat4.jpeg" style="width: 20%; margin: 0 auto; ">
+    <img src="/images/cat4.jpeg" style="width: 20%; margin: 0 auto; ">
     <div>1000 x 1000px</div>
   </div>
 </div>
@@ -214,7 +214,7 @@ https://cdn.pawellorenc.com/cat.png
 </div>
 
 <div style="text-align: center">
-  <img src="images/cloudfront.png" style="width: 30%; margin: 10px auto;">
+  <img src="/images/cloudfront.png" style="width: 30%; margin: 10px auto;">
   <span style="font-weight: bold;">Amazon CloudFront</span>
 </div>
 
@@ -274,10 +274,10 @@ slasknet.com
 
 ::right::
 <div style="text-align:center">
-  <img src="images/20041017polar_slask.jpeg" style="width: 60%; margin: 0 auto 10px;">
+  <img src="/images/20041017polar_slask.jpeg" style="width: 60%; margin: 0 auto 10px;">
   Polar Wrocław - Śląsk Wrocław (17.10.2004)
 
-  <img src="images/20050904_slask_lechia.jpeg" style="width: 60%; margin: 10px auto;">
+  <img src="/images/20050904_slask_lechia.jpeg" style="width: 60%; margin: 10px auto;">
   Lechia Gdańsk - Śląsk Wrocław (04.09.2005)
 </div>
 
@@ -286,7 +286,7 @@ slasknet.com
 layout: two-cols
 ---
 
-<img src="images/slasknet-screenshot-kobiety3.png" style="width: 80%;">
+<img src="/images/slasknet-screenshot-kobiety3.png" style="width: 80%;">
 
 ::right::
 
@@ -297,7 +297,7 @@ layout: two-cols
   <li v-click>Powinno być: 740 x 416 px</li>
 </ul>
 
-<img v-click src="images/slasknet-fb.png" style="width: 80%;margin: 20px auto;">
+<img v-click src="/images/slasknet-fb.png" style="width: 80%;margin: 20px auto;">
 
 ---
 
@@ -310,7 +310,7 @@ clicks: 3
 
 # Dynamiczne przetwarzanie obrazów
 
-<img src="images/architecture.png" style="width: 90%">
+<img src="/images/architecture.png" style="width: 90%">
 
 ```ts {all|1|2|all}
 /image.jpg?format=auto&Width=256
@@ -367,9 +367,9 @@ break;
 # Ile potrzeba miejsca i czasu?
 
 <div v-click>
-  <img src="images/cold_start_jpg_480.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+  <img src="/images/cold_start_jpg_480.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 
-  <img src="images/cold_start_png_480.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+  <img src="/images/cold_start_png_480.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 </div>
 
 ---
@@ -377,9 +377,9 @@ break;
 # Ile potrzeba miejsca i czasu?
 
 <div>
-  <img src="images/cold_start_jpg_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+  <img src="/images/cold_start_jpg_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 
-  <img src="images/cold_start_png_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+  <img src="/images/cold_start_png_oryginalne.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 </div>
 
 ---
@@ -387,9 +387,9 @@ break;
 # Ile potrzeba miejsca i czasu?
 
 <div>
-  <img src="images/cold_start_jpg_oryginalne_red.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+  <img src="/images/cold_start_jpg_oryginalne_red.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 
-  <img src="images/cold_start_png_oryginalne_red.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
+  <img src="/images/cold_start_png_oryginalne_red.png" style="width: 80%;margin: 20px auto; border: 1px solid gray;" />
 </div>
 
 ---
@@ -440,13 +440,13 @@ export default function Page() {
 
 # Upload plików
 
-<img v-click src="images/upload-fe-be-aws.png" style="width: 90%; margin: 40px auto 0;">
+<img v-click src="/images/upload-fe-be-aws.png" style="width: 90%; margin: 40px auto 0;">
 
 ---
 
 # Upload plików
 
-<img src="images/presignedurl3.png" style="width: 90%; margin: 40px auto 0;">
+<img src="/images/presignedurl3.png" style="width: 90%; margin: 40px auto 0;">
 
 
 ---
@@ -463,7 +463,7 @@ Ile to wszystko będzie kosztować?
 
 # AWS Free Tier
 
-<img src="images/aws_free_tier.png" style="width: 90%">
+<img src="/images/aws_free_tier.png" style="width: 90%">
 
 ---
 
@@ -475,7 +475,7 @@ Ile to wszystko będzie kosztować?
 - pobieranie plików: $0.00043 za każde 1000 zapytań
 - wgrywanie plików: $0.00054 za każde 1000 zapytań
 
-<img src="images/pricing-s3.png" style="width: 90%; margin-top: 20px;">
+<img src="/images/pricing-s3.png" style="width: 90%; margin-top: 20px;">
 
 ---
 
@@ -486,15 +486,15 @@ Ile to wszystko będzie kosztować?
 - CloudFront Functions: $0,1 dla miliona wywołań
 
 <div style="text-align: center; margin-top: 20px;">
-  <img src="images/pricing-cf.png" style="display: inline-block; width: 20%; margin-right: 30px;">
-  <img src="images/pricing-cf2.png" style="display: inline-block; width: 30%">
+  <img src="/images/pricing-cf.png" style="display: inline-block; width: 20%; margin-right: 30px;">
+  <img src="/images/pricing-cf2.png" style="display: inline-block; width: 30%">
 </div>
 
 ---
 
 # Koszty - Lambda
 
-<img src="images/pricing-lambda.png" style="width: 90%; margin-top: 20px;">
+<img src="/images/pricing-lambda.png" style="width: 90%; margin-top: 20px;">
 
 ---
 
@@ -560,6 +560,6 @@ Koszty:
 ## optymalizacja obrazów w AWS
 
 <div style="text-align: center; margin-top: 20px;">
-  <img src="images/qrcode2.png" style="width: 40%; margin: 0 auto;">
+  <img src="/images/qrcode2.png" style="width: 40%; margin: 0 auto;">
 </div>
 
